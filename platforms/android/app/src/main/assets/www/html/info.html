@@ -1,0 +1,74 @@
+<ons-page id="infopage">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>Back</ons-back-button></div>
+      <div class="center" data-i18ninfopg="Info">Info</div>
+    </ons-toolbar>       
+    
+    <div class="screen-wrap-white">
+
+        <ons-list id="about_items">
+                
+            <ons-list-item tappable style="cursor: pointer" modifier="longdivider" onclick="showhelpguide()" >
+              <div class="left">
+                <ons-icon icon="fa-support" style="color: #e781c5;"></ons-icon>
+              </div>
+              <div class="center">
+                  <span class='list-item__title' data-i18ninfopg="Help Guide">Help Guide</span>
+                  <span class='list-item__subtitle' data-i18ninfopg="Get help tips on the taxi service">Get help tips on the Droptaxi service</span>
+              </div>
+            </ons-list-item>
+    
+            <ons-list-item id="profile" tappable style="cursor: pointer" modifier="longdivider" onclick="showterms()">
+                <div class="left">
+                  <ons-icon icon="fa-gavel" style="color: #644414;"></ons-icon>
+                </div>
+                <div class="center">
+                    <span class='list-item__title' data-i18ninfopg="Terms and Privacy Policy">Terms and Privacy Policy</span>
+                    <span class='list-item__subtitle' data-i18ninfopg="Our service policies you should know about">Our service policies you should know about</span>
+                </div>
+            </ons-list-item>
+    
+            <ons-list-item tappable style="cursor: pointer" modifier="longdivider " onclick="showdrivewith()">
+                  <div class="left">
+                    <ons-icon icon="fa-taxi" style="color: #c2bf00;"></ons-icon>
+                  </div>
+                  <div class="center">
+                      <span class='list-item__title' data-i18ninfopg="Drive with Us">Drive with Us</span>
+                    <span class='list-item__subtitle' data-i18ninfopg="Earn good money with your car">Earn good money with your car</span>
+                  </div>
+            </ons-list-item>
+
+                
+            <ons-list-item tappable style="cursor: pointer" modifier="longdivider" onclick="showaboutapp()">
+              <div class="left">
+                <ons-icon icon="fa-info-circle" style="color: #42a5f5;"></ons-icon>
+              </div>
+              <div class="center">
+                  <span class='list-item__title' data-i18ninfopg="About Droptaxi">About Droptaxi</span>
+                  <span class='list-item__subtitle' data-i18ninfopg="The complete taxi software solution">The complete taxi software solution</span>
+              </div>
+            </ons-list-item>
+
+            <ons-list-item tappable style="cursor: pointer" modifier="longdivider" onclick="showsoftlicenses()">
+              <div class="left">
+                <ons-icon icon="fa-gavel" style="color: #a902ca;"></ons-icon>
+              </div>
+              <div class="center">
+                  <span class='list-item__title' data-i18ninfopg="Software licenses">Software licenses</span>
+                  <span class='list-item__subtitle' data-i18ninfopg="Google maps and other third party software licenses">Google maps and other third party software licenses</span>
+              </div>
+            </ons-list-item>
+            
+    
+            
+          </ons-list>
+
+        
+
+    </div>
+    
+
+
+   
+
+</ons-page>

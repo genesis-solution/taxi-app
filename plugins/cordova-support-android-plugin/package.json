@@ -1,0 +1,61 @@
+{
+  "_from": "cordova-support-android-plugin@~2.0.4",
+  "_id": "cordova-support-android-plugin@2.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-WIrCc+s9foJLc6XBZFMGLlB75Dt1rAsK9okZlW6NP5KZgxGAqdjMIgwQNiw/mMbSaauDQpacn0EDw5QY32p2HA==",
+  "_location": "/cordova-support-android-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-support-android-plugin@~2.0.4",
+    "name": "cordova-support-android-plugin",
+    "escapedName": "cordova-support-android-plugin",
+    "rawSpec": "~2.0.4",
+    "saveSpec": null,
+    "fetchSpec": "~2.0.4"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-support-android-plugin/-/cordova-support-android-plugin-2.0.4.tgz",
+  "_shasum": "b34a9b938a87b11121dc402c4676bb992b8f03aa",
+  "_spec": "cordova-support-android-plugin@~2.0.4",
+  "_where": "C:\\wamp64\\www\\drop\\drop\\rider",
+  "author": {
+    "name": "Maksim Chemerisuk",
+    "email": "chemerisuk@gmail.com",
+    "url": "https://github.com/chemerisuk"
+  },
+  "bugs": {
+    "url": "https://github.com/chemerisuk/cordova-support-android-plugin/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-support-android-plugin",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "More convenient base CordovaPlugin class",
+  "homepage": "https://github.com/chemerisuk/cordova-support-android-plugin#readme",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-support-android-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemerisuk/cordova-support-android-plugin.git"
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags",
+    "version": "perl -i -pe 's/(version=)\"\\d+\\.\\d+\\.\\d+\"/$1\"'$npm_package_version'\"$2/' plugin.xml && git add plugin.xml README.md"
+  },
+  "version": "2.0.4"
+}

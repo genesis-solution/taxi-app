@@ -1,0 +1,72 @@
+{
+  "_from": "com.peerio.cordova.plugin.carrier",
+  "_id": "com.peerio.cordova.plugin.carrier@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-iogSPofuC4SdPKrusf2H6/JvXvY3YNIHWMnZpmubg7tgyvTlOgwec/FGZRHMX61Ee/pNwXhivDRQq4f4JlurLw==",
+  "_location": "/com.peerio.cordova.plugin.carrier",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "com.peerio.cordova.plugin.carrier",
+    "name": "com.peerio.cordova.plugin.carrier",
+    "escapedName": "com.peerio.cordova.plugin.carrier",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/com.peerio.cordova.plugin.carrier/-/com.peerio.cordova.plugin.carrier-1.0.4.tgz",
+  "_shasum": "e7a019a2180e8be7c45c6c7657e3b35d600ecc19",
+  "_spec": "com.peerio.cordova.plugin.carrier",
+  "_where": "C:\\wamp64\\www\\drop\\rider",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/PeerioTechnologies/peerio-cordova-carrier/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Luis Vasconcellos"
+    },
+    {
+      "name": "Samvel Avanesov",
+      "email": "seavan@gmail.com"
+    }
+  ],
+  "cordova": {
+    "id": "com.peerio.cordova.plugin.carrier",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Carrier Plugin",
+  "forked": {
+    "type": "git",
+    "url": "https://github.com/dtmtec/cordova-plugin-carrier",
+    "version": "*"
+  },
+  "homepage": "https://github.com/PeerioTechnologies/peerio-cordova-carrier#readme",
+  "keywords": [
+    "cordova",
+    "peerio",
+    "carrier",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache-2.0",
+  "name": "com.peerio.cordova.plugin.carrier",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeerioTechnologies/peerio-cordova-carrier.git"
+  },
+  "version": "1.0.4"
+}

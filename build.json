@@ -1,0 +1,12 @@
+{
+    "android": {        
+        "release": {
+            "keystore": "keystore.jks",
+            "storePassword": "mellamoleonel",
+            "alias": "kiwi",
+            "password" : "mellamoleonel",
+            "keystoreType": "",
+            "packageType": "apk"
+        }
+    }
+}

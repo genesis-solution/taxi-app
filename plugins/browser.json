@@ -1,0 +1,73 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com.peerio.cordova.plugin.carrier": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-android-support-gradle-release": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-call-number": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-firebase-authentication": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-firebase-messaging": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-googlemaps": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-request-location-accuracy": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-web-share": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "phonegap-plugin-mobile-accessibility": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "skwas-cordova-plugin-datetimepicker": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-support-android-plugin": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "com.kiwi.plus.pasajeros"
+    }
+  }
+}

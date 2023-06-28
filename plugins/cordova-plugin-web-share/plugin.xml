@@ -1,0 +1,49 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-web-share"
+      version="1.2.1">
+
+    <name>WebShare</name>
+    <description>Web Share API polyfill for Cordova</description>
+    <license>MIT</license>
+    <keywords>cordova</keywords>
+    <repo>https://github.com/chemerisuk/cordova-plugin-web-share</repo>
+    <issue>https://github.com/chemerisuk/cordova-plugin-web-share/issues</issue>
+
+    <js-module src="www/WebShare.js" name="WebShare">
+        <clobbers target="window.navigator.share" />
+    </js-module>
+
+    <engines>
+        <engine name="cordova" version=">=6.0.0"/>
+        <engine name="cordova-android" version=">=6.0.0"/>
+        <engine name="cordova-ios" version=">=4.3.0"/>
+    </engines>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="WebShare">
+                <param name="ios-package" value="WebSharePlugin" />
+                <param name="onload" value="false" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/WebSharePlugin.h" />
+        <source-file src="src/ios/WebSharePlugin.m" />
+    </platform>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="WebShare">
+                <param name="android-package" value="by.chemerisuk.cordova.WebSharePlugin" />
+                <param name="onload" value="false" />
+            </feature>
+        </config-file>
+
+        <dependency id="cordova-support-android-plugin" version="~1.0.0"/>
+
+        <source-file src="src/android/WebSharePlugin.java"
+            target-dir="src/by/chemerisuk/cordova/" />
+    </platform>
+
+</plugin>

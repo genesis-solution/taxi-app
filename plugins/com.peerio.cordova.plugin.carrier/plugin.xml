@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="com.peerio.cordova.plugin.carrier"
+  version="1.0.1">
+  <name>Carrier</name>
+  <description>A plugin to get the device's carrier name, mcc mnc, and country code</description>
+  <license>MIT</license>
+  <keywords>cordova,carrier,mcc,mnc</keywords>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/carrier.js" name="Carrier">
+    <clobbers target="window.plugins.carrier" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Carrier">
+        <param name="ios-package" value="Carrier" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/Carrier.h"/>
+    <source-file src="src/ios/Carrier.m"/>
+
+    <framework src="CoreTelephony.framework"/>
+  </platform>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Carrier">
+        <param name="android-package" value="com.dtmtec.Carrier"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/com/dtmtec/Carrier.java" target-dir="src/com/dtmtec" />
+  </platform>
+</plugin>

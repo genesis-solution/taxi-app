@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="pgm_google_close_button">Luk</string>
+  <string name="pgm_api_key_error">Vær sød at ændre \'GOOGLE_MAPS_ANDROID_API_KEY\' i config.xml med din egen API-nøgle!</string>
+  <string name="pgm_google_play_error">Google Maps Android API v2 er, af en eller anden grund, ikke tilgængelig på denne enhed.</string>
+  <string name="pgm_google_play_developer_error">Applikationen er fejlkonfigureret. Denne fejl er ikke genoprettelig og vil blive betragtet som fatal. Udvikleren bør kigge i logs efter dette for at finde mere handlingsrettet information.</string>
+  <string name="pgm_google_play_internal_error">En intern fejl skete med Google Play Services. Vær sød at prøve igen, og så burde det løse problemet.</string>
+  <string name="pgm_google_play_invalid_account">Du prøvede at tilslutte til servicen med et invalidt kontonavn specificeret</string>
+  <string name="pgm_google_play_license_check_failed">Applikationen er ikke licenseret til brugeren. Denne fejl er ikke genoprettelig og vil blive betragtet som fatal.</string>
+  <string name="pgm_google_play_network_error">Der skete en netværksfejl. Vær sød at prøve igen, og så burde det løse problemet.</string>
+  <string name="pgm_google_play_service_disabled">Den installeret version af Google Play Services er blevet  has been deaktiveret på denne enhed. Vær sød at tænde for Google Play Services.</string>
+  <string name="pgm_google_play_service_invalid">Versionen for Google Play Services installeret på denne enhed er ikke autentisk. Vær sød at opdatere Google Play Services fra Google Play Store.</string>
+  <string name="pgm_google_play_service_missing">Google Play services mangler på denne enhed. Vær sød at installere Google Play Services.</string>
+  <string name="pgm_google_play_service_update_required">Den installeret version af Google Play services er forældet. Vær sød at opdatere Google Play Services fra Google Play Store.</string>
+  <string name="pgm_google_play_sign_in_required">Du prøvede at tilslutte til servicen, men du er ikke logget ind. Vær sød at tjekke Google Play Services konfigurationen</string>
+  <string name="pgm_no_location_providers">Siden denne enhed ikke har en lokationsudbyder kan denne app ikke finde din lokation</string>
+  <string name="pgm_no_location_service_is_disabled">Lokationsservice er deaktiveret.</string>
+  <string name="pgm_location_rejected_by_user">Lokationsservice blev afvist af bruger.</string>
+  <string name="pgm_can_not_get_location">Kan ikke finde din lokation. Prøv igen.</string>
+</resources>

@@ -1,0 +1,29 @@
+<ons-page id="routespage">
+        <ons-toolbar>
+          <div class="left"><ons-back-button>Back</ons-back-button></div>
+          <div class="center" data-i18nroutespg="Select Route">Select Route</div>
+        </ons-toolbar>
+        <ons-tabbar id="routesTabbar" swipeable position="auto">
+          <ons-tab page="intracity.html" data-i18ntroutespg="Intra-City" label="Intra-City" active></ons-tab>
+          <ons-tab page="interstate.html" data-i18ntroutespg="Inter-State" label="Inter-State"></ons-tab>
+        </ons-tabbar>
+        <div class="screen-wrap-white">
+          <template id="intracity.html">
+            <ons-page id="intracitylistpage">
+              <div class="screen-wrap-white">
+                <div id="routes-list"></div>         
+              </div>
+            </ons-page>
+          </template>
+
+          <template id="interstate.html">
+            <ons-page id="interstatelistpage">
+              <div class="screen-wrap-white">
+                <div id="state-routes-list"></div>         
+              </div>
+            </ons-page>
+          </template>
+        </div>
+
+</ons-page>
+      

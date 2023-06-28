@@ -1,0 +1,147 @@
+<ons-page id="newbookingpage">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>Back</ons-back-button></div>
+      <div class="center" data-i18nnewbk="Trip Summary">Trip Summary</div>
+    </ons-toolbar>
+    <div class="screen-wrap-white">
+      <div style="padding:0px 5px;overflow-y: auto;height:100%; position:relative;overflow-x:hidden;">
+        <table id='trip-summary' style="height:100%;width:100%;table-layout: fixed;">
+          <tbody>
+            <!-- <tr>
+              <td colspan="4" style="border-bottom: solid thin lightgray;padding-top: 6px;padding-bottom: 6px;">
+                <p style="margin: 3px 0;font-weight:bold;">TRIP DETAILS</p>
+              </td>
+              
+            </tr> -->
+            <tr>
+              <td colspan="1">
+                <img src="img/pick-up-nb.png" style="width:90%;vertical-align: middle;margin-right: 10px;"/>
+              </td>
+              <td colspan="9" style="border-bottom: solid thin lightgray;padding-top: 6px;padding-bottom: 6px;">
+                <p style="color:#8a8a8a;font-size:12px;margin: 0 0" data-i18nnewbk="Pick up location">Pick up location</p>
+                <p id="pick-up-address" style="font-weight:bold;margin: 3px 0;text-overflow: ellipsis;overflow: hidden;"></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1">
+                  <img src="img/drop-off-nb.png" style="width:90%;vertical-align: middle;margin-right: 10px;"/>
+              </td>
+              <td colspan="9" style="border-bottom: solid thin lightgray;padding-top: 6px;padding-bottom: 6px;">
+                  <p style="color:#8a8a8a;font-size:12px;margin: 0 0" data-i18nnewbk="Drop off location">Drop off location</p>
+                  <p id="drop-off-address" style="font-weight:bold;margin: 3px 0;text-overflow: ellipsis;overflow: hidden;"></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1">
+                  <img src="img/distance-dur.png" style="width:90%;vertical-align: middle;margin-right: 10px;"/>
+              </td>
+              <td colspan="9" style="border-bottom: solid thin lightgray;padding-top: 6px;padding-bottom: 6px;">
+                <p style="color:#8a8a8a;font-size:12px;margin: 0 0" data-i18nnewbk="Distance | ETA">Distance | ETA</p>
+                <p id = "ride_dist_dur" style="font-weight:bold;margin: 3px 0;text-overflow: ellipsis;overflow: hidden;"></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1">
+                  <img src="img/time-date.png" style="width:90%;vertical-align: middle;margin-right: 10px;"/>
+              </td>
+              <td colspan="9" style="border-bottom: solid thin lightgray;padding-top: 6px;padding-bottom: 6px;">
+                <div id="set_puc_dt">
+                  <p style="color:#8a8a8a;font-size:12px;margin: 0 0" data-i18nnewbk="Schedule time">Schedule time </p>
+                  <p id="puc_dt" style="font-size: 16px;color:#2979ff;font-weight:bold;margin: 3px 0;text-overflow: ellipsis;overflow: hidden;"></p>
+                  
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+                <td colspan="1">
+                    <img src="img/car-type.png" style="width:90%;vertical-align: middle;margin-right: 10px;"/>
+                </td>
+                <td colspan="9" style="border-bottom: solid thin lightgray;padding-top: 6px;padding-bottom: 6px;">
+                  <p style="color:#8a8a8a;font-size:12px;margin: 0 0" data-i18nnewbk="Vehicle type">Vehicle type</p>
+                  <p id="car-name" style="font-weight:bold;margin: 3px 0;text-overflow: ellipsis;overflow: hidden;">
+                    
+                  </p>
+                </td>
+            </tr>
+
+              <tr>
+                <td colspan="1"></td>
+                <td colspan="9" style="border-bottom: solid thin lightgray;padding-top: 6px;padding-bottom: 6px;">
+                    <!-- <div style="text-align:center;">
+
+                        <img id="route-ride-image" height='100' src="img/ride-sample.png">
+                      
+                    </div> -->
+                    <div id='cars-container' style='overflow-x: hidden;margin-top:10px;'>
+                      <div id='rides-carousel' class="owl-carousel owl-theme">
+
+
+                      </div>
+                    </div>
+              
+                    
+                    <p id="route-ride-desc" style="text-align:center;margin: 3px 0;color:#777;font-size:13px;"></p>  
+
+
+                </td>
+              </tr>
+
+              <tr>
+                  <td colspan="1">
+                      <img src="img/money.png" style="width:90%;vertical-align: middle;margin-right: 10px;"/>
+                  </td>
+                  <td style="padding-top: 6px;padding-bottom: 6px;" colspan="4">
+                    <p id="fare-status" style="color:#8a8a8a;font-size:12px;margin: 0 0" data-i18nnewbk="Fare">Fare </p>
+                    <p id = "bookride_cost" style="font-weight:bold;margin: 3px 0;text-overflow: ellipsis;overflow: hidden;"></p>
+                  </td>
+                  <td colspan="1" style="border-left: solid thin lightgray;">
+                      <img src="img/coupon.png" style="width:90%;vertical-align: middle;margin-right: 10px;"/>
+                  </td>
+                  <td style="padding-top: 6px;padding-bottom: 6px;" colspan="4">
+                      <p style="color:#8a8a8a;font-size:12px;margin: 0 0" data-i18nnewbk="Coupon">Coupon</p>
+                      <p id = "coupon-code" onclick="coupon_check();"style="color:#2979ff;font-weight:bold;margin: 3px 0;text-overflow: ellipsis;overflow: hidden;" data-i18nnewbk="Enter code">Enter code</p>
+                  </td>
+
+              </tr>
+
+              <tr>
+                  <td colspan="1">
+                      <img src="img/payment.png" style="width:90%;vertical-align: middle;margin-right: 10px;"/>
+                  </td>
+                  <td colspan="9" style="border-top: solid thin lightgray;padding-top: 6px;padding-bottom: 6px;">
+                    <p style="color:#8a8a8a;font-size:12px;margin: 0 0" data-i18nnewbk="Payment method">Payment method</p>
+                    <p style="margin: 3px 0;">
+                      <ons-select class="select">
+                          <select class="select-input" id="payment-type" style='font-size: 16px;font-weight: bold;color:#2979ff;margin-top: -5px;background: none;' >
+                              
+                          </select>
+                      </ons-select>
+                    </p>
+                  </td>
+              </tr>
+
+              <tr>
+                  
+                  <td colspan="10" style="border-top: solid thin lightgray;padding-top: 6px;padding-bottom: 6px;">
+                      <div style="text-align:center;width:100%">
+                          <ons-button style="width:90%;margin-left: auto;margin-right: auto;" modifier="large" id="bookride" data-i18nnewbk="Request Ride">Request Ride</ons-button>
+                      </div> 
+                  </td>
+                
+              <tr>
+
+
+              
+            </tbody>
+          </table>
+      </div>
+    </div>
+    
+
+
+           
+
+
+</ons-page>
+      

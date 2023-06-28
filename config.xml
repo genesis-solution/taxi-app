@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.kiwi.plus.pasajeros" version="10.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Kiwi</name>
+    <description>
+        Movete mas y paga menos usando Kiwi, una aplicacion de transporte.
+    </description>
+    <author email="kiwi-movetemejor@kiwiplus.site" href="https://kiwigchu.site">
+        KiwiPlus
+    </author>
+    <content src="index.html" />
+    
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        
+        
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/icon/android/splash-icon.png" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#ffffff" />
+        <preference name="AndroidPostSplashScreenTheme" value="@style/DropTheme"/>
+        <preference name="SplashScreenDelay" value="-1" />
+        <preference name="ShowSplashScreenSpinner" value="false" />
+        <preference name="FadeSplashScreen" value="false"/>
+
+        <preference name="AndroidInsecureFileModeEnabled" value="true" />
+        
+
+        <resource-file src="res/styles.xml" target="app/src/main/res/values/styles.xml" />
+
+        <icon src="res/icon/android/icon-36-ldpi.png" density="ldpi" />
+        <icon src="res/icon/android/icon-48-mdpi.png" density="mdpi" />
+        <icon src="res/icon/android/icon-72-hdpi.png" density="hdpi" />
+        <icon src="res/icon/android/icon-96-xhdpi.png" density="xhdpi" />
+        
+
+
+        <resource-file src="res/icon/android-notification/icon-mdpi.png" target="app/src/main/res/drawable-mdpi/notification_icon.png" />
+        <resource-file src="res/icon/android-notification/icon-hdpi.png" target="app/src/main/res/drawable-hdpi/notification_icon.png" />
+        <resource-file src="res/icon/android-notification/icon-xhdpi.png" target="app/src/main/res/drawable-xhdpi/notification_icon.png" />
+        <resource-file src="res/icon/android-notification/icon-xxhdpi.png" target="app/src/main/res/drawable-xxhdpi/notification_icon.png" />
+        <resource-file src="res/icon/android-notification/icon-xxxhdpi.png" target="app/src/main/res/drawable-xxxhdpi/notification_icon.png" />
+
+        <config-file parent="/manifest/application" target="app/src/main/AndroidManifest.xml">
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/notification_icon"/>
+        </config-file>
+        
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform> 
+
+    <preference name="LoadUrlTimeoutValue" value="700000" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyBzUjX7hsLAZYJk4GolTcBoeW_9fabn4HQ" />
+    <preference name="GOOGLE_MAPS_IOS_API_KEY" value="AIzaSyBzUjX7hsLAZYJk4GolTcBoeW_9fabn4HQ" />
+    <preference name="GOOGLE_MAPS_PLAY_SERVICES_VERSION" value="18.+" />
+    
+           
+    
+    <preference name="cordova.plugins.diagnostic.modules" value="LOCATION" />
+
+    <preference name="android-minSdkVersion" value="22" />
+    <preference name="android-targetSdkVersion" value="31" />
+    <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+    
+    <preference name="AndroidXEnabled" value="true" />
+    
+</widget>

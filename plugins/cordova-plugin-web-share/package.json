@@ -1,0 +1,64 @@
+{
+  "_from": "cordova-plugin-web-share",
+  "_id": "cordova-plugin-web-share@1.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-ITywNoloXfEYfNSEb0Z6UhBQnHvtymuq2b9Df+JA/YKnUHNsB44nh7t/KGL9sHs/nx43VZpPZ9JcZ1EibUrssQ==",
+  "_location": "/cordova-plugin-web-share",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-web-share",
+    "name": "cordova-plugin-web-share",
+    "escapedName": "cordova-plugin-web-share",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-web-share/-/cordova-plugin-web-share-1.2.1.tgz",
+  "_shasum": "8a65c869ceb630897483502d03b656b337b15c7e",
+  "_spec": "cordova-plugin-web-share",
+  "_where": "C:\\wamp64\\www\\drop\\drop\\rider",
+  "author": {
+    "name": "Maksim Chemerisuk",
+    "email": "chemerisuk@gmail.com",
+    "url": "https://github.com/chemerisuk"
+  },
+  "bugs": {
+    "url": "https://github.com/chemerisuk/cordova-plugin-web-share/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-web-share",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Web Share API polyfill for Cordova",
+  "homepage": "https://github.com/chemerisuk/cordova-plugin-web-share#readme",
+  "keywords": [
+    "cordova",
+    "share",
+    "web share",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-web-share",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemerisuk/cordova-plugin-web-share.git"
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags",
+    "version": "perl -p -i -e 's/(version=)\"\\d+\\.\\d+\\.\\d+\"/$1\"'$npm_package_version'\"$2/' plugin.xml && git add plugin.xml"
+  },
+  "version": "1.2.1"
+}
