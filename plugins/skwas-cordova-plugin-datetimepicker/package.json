@@ -1,0 +1,70 @@
+{
+  "_from": "skwas-cordova-plugin-datetimepicker@2.0.1",
+  "_id": "skwas-cordova-plugin-datetimepicker@2.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-m0/B4qoYFW2qjIiCX+8m4ZkhVIJWf2DFXHYB+A0aA7hCU0IxD/PhVH/T1Y5FcVwWwQKaQ09dTZ1zHHdv7a51ng==",
+  "_location": "/skwas-cordova-plugin-datetimepicker",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "skwas-cordova-plugin-datetimepicker@2.0.1",
+    "name": "skwas-cordova-plugin-datetimepicker",
+    "escapedName": "skwas-cordova-plugin-datetimepicker",
+    "rawSpec": "2.0.1",
+    "saveSpec": null,
+    "fetchSpec": "2.0.1"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/skwas-cordova-plugin-datetimepicker/-/skwas-cordova-plugin-datetimepicker-2.0.1.tgz",
+  "_shasum": "81642815b58d4821460943652aedd85223a94fe5",
+  "_spec": "skwas-cordova-plugin-datetimepicker@2.0.1",
+  "_where": "C:\\wamp64old\\www\\drop\\rider",
+  "author": {
+    "name": "skwasjer"
+  },
+  "bugs": {
+    "url": "https://github.com/skwasjer/skwas-cordova-plugin-datetimepicker/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "turshija"
+    },
+    {
+      "name": "emanfu"
+    },
+    {
+      "name": "masimplo"
+    }
+  ],
+  "cordova_name": "DateTime picker",
+  "deprecated": false,
+  "description": "Cordova DateTime picker plugin",
+  "engines": [],
+  "homepage": "https://github.com/skwasjer/skwas-cordova-plugin-datetimepicker#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova",
+    "datetime",
+    "datetimepicker",
+    "datepicker",
+    "timepicker"
+  ],
+  "license": "MIT",
+  "name": "skwas-cordova-plugin-datetimepicker",
+  "platforms": [
+    "android",
+    "ios"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skwasjer/skwas-cordova-plugin-datetimepicker.git"
+  },
+  "types": "./types/index.d.ts",
+  "version": "2.0.1"
+}

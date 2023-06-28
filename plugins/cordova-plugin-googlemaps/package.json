@@ -1,0 +1,93 @@
+{
+  "_from": "cordova-plugin-googlemaps@2.7.0",
+  "_id": "cordova-plugin-googlemaps@2.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-gXwSv+NOVvXGwiDMV2HEPhhsjus08S6n8uWMPONd0s2PRSasRX0D+rv20s0LsQHIiDwHzlG2Nrn+HWjZYUNl9A==",
+  "_location": "/cordova-plugin-googlemaps",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-googlemaps@2.7.0",
+    "name": "cordova-plugin-googlemaps",
+    "escapedName": "cordova-plugin-googlemaps",
+    "rawSpec": "2.7.0",
+    "saveSpec": null,
+    "fetchSpec": "2.7.0"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-googlemaps/-/cordova-plugin-googlemaps-2.7.0.tgz",
+  "_shasum": "0abda03b71d20a249bb026b671ab5c6343bec5c1",
+  "_spec": "cordova-plugin-googlemaps@2.7.0",
+  "_where": "C:\\wamp64old\\www\\drop\\rider",
+  "author": {
+    "name": "Masashi Katsumata, Hirbod Mirjavadi"
+  },
+  "bugs": {
+    "url": "https://github.com/mapsplugin/cordova-plugin-googlemaps/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-googlemaps",
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ]
+  },
+  "dependencies": {
+    "cordova-common": "^3.1.0"
+  },
+  "deprecated": false,
+  "description": "Google Maps native SDK for Android and iOS, and Google Maps JavaScript API v3 for browser.",
+  "devDependencies": {
+    "cordova-js": "^4.2.4",
+    "eslint": "^5.7.0",
+    "jest": "^23.6.0"
+  },
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=5.1.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=5.1.1"
+    },
+    {
+      "name": "apple-xcode",
+      "version": ">=10.0.0"
+    },
+    {
+      "name": "apple-ios",
+      "version": ">=10.0.0"
+    }
+  ],
+  "homepage": "https://github.com/mapsplugin/cordova-plugin-googlemaps",
+  "keywords": [
+    "google",
+    "maps",
+    "geo",
+    "google maps",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-googlemaps",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git"
+  },
+  "scripts": {
+    "eslint": "node node_modules/eslint/bin/eslint www src",
+    "jest": "jest",
+    "test": "jest && npm run eslint",
+    "test:watch": "jest --watch"
+  },
+  "version": "2.7.0"
+}

@@ -1,0 +1,31 @@
+<resources>
+    <color name="primaryColor">#329632</color>
+    <color name="primaryColorDark">#000000</color>
+    <style name="DropTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- on startup the background and app-name is shown, we use the same color to see just background.. -->
+        <item name="android:textColorPrimary">@color/primaryColorDark</item>
+        <item name="android:colorBackground">@color/primaryColorDark</item>
+
+        <!-- native spinners etc are derived from this -->
+        <item name="android:colorAccent">@color/primaryColor</item>
+
+        <!-- AppSwitcher and Statusbar backgrounds-->
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark">@color/primaryColor</item>
+
+        <!-- the bottom nav-bar -->
+        <item name="android:navigationBarColor">@color/primaryColorDark</item>
+
+        <!-- date- and timepickers need their own themes -->
+        <item name="android:datePickerDialogTheme">@style/MyPickerDialogTheme</item>
+        <item name="android:timePickerDialogTheme">@style/MyPickerDialogTheme</item>
+
+        <item name="android:timePickerDialogTheme">@style/MyPickerDialogTheme</item>android:dialogTheme
+    </style>
+
+    <style name="MyPickerDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">@color/primaryColor</item>
+    </style>
+
+    
+</resources>

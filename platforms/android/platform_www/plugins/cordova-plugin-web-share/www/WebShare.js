@@ -1,0 +1,23 @@
+cordova.define("cordova-plugin-web-share.WebShare", function(require, exports, module) {
+var exec = require("cordova/exec");
+var PLUGIN_NAME = "WebShare";
+var DEFAULT_IOS_EXCLUSIONS = [
+        "com.apple.UIKit.activity.AddToReadingList",
+        "com.apple.UIKit.activity.AirDrop"
+    ];
+
+module.exports = function(options) {
+    return new Promise(function(resolve, reject) {
+        if (!options || !options.text && !options.url) {
+            reject(new TypeError("Nothing to share"));
+        } else {
+            if (!options.iosExcludedActivities) {
+                options.iosExcludedActivities = DEFAULT_IOS_EXCLUSIONS;
+            }
+
+            exec(resolve, reject, PLUGIN_NAME, "share", [options]);
+        }
+    });
+};
+
+});

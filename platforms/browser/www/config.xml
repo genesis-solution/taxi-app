@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.kiwi.plus.pasajeros" version="10.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Kiwi</name>
+    <description>
+        Movete mas y paga menos usando Kiwi, una aplicacion de transporte.
+    </description>
+    <author email="kiwi-movetemejor@kiwiplus.site" href="https://kiwigchu.site">
+        KiwiPlus
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="LoadUrlTimeoutValue" value="700000" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyBzUjX7hsLAZYJk4GolTcBoeW_9fabn4HQ" />
+    <preference name="GOOGLE_MAPS_IOS_API_KEY" value="AIzaSyBzUjX7hsLAZYJk4GolTcBoeW_9fabn4HQ" />
+    <preference name="GOOGLE_MAPS_PLAY_SERVICES_VERSION" value="18.+" />
+    <preference name="cordova.plugins.diagnostic.modules" value="LOCATION" />
+    <preference name="android-minSdkVersion" value="22" />
+    <preference name="android-targetSdkVersion" value="31" />
+    <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+    <preference name="AndroidXEnabled" value="true" />
+</widget>

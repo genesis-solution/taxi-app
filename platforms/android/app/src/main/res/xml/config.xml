@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.kiwi.plus.pasajeros" version="10.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Carrier">
+        <param name="android-package" value="com.dtmtec.Carrier" />
+    </feature>
+    <feature name="CallNumber">
+        <param name="android-package" value="mx.ferreyra.callnumber.CFCallNumber" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="CordovaGoogleMaps">
+        <param name="android-package" value="plugin.google.maps.CordovaGoogleMaps" />
+        <param name="onload" value="true" />
+        <param name="onreset" value="true" />
+    </feature>
+    <feature name="PluginMap">
+        <param name="android-package" value="plugin.google.maps.PluginMap" />
+    </feature>
+    <feature name="PluginPolyline">
+        <param name="android-package" value="plugin.google.maps.PluginPolyline" />
+    </feature>
+    <feature name="PluginPolygon">
+        <param name="android-package" value="plugin.google.maps.PluginPolygon" />
+    </feature>
+    <feature name="PluginMarker">
+        <param name="android-package" value="plugin.google.maps.PluginMarker" />
+    </feature>
+    <feature name="PluginCircle">
+        <param name="android-package" value="plugin.google.maps.PluginCircle" />
+    </feature>
+    <feature name="PluginTileOverlay">
+        <param name="android-package" value="plugin.google.maps.PluginTileOverlay" />
+    </feature>
+    <feature name="PluginGroundOverlay">
+        <param name="android-package" value="plugin.google.maps.PluginGroundOverlay" />
+    </feature>
+    <feature name="PluginKmlOverlay">
+        <param name="android-package" value="plugin.google.maps.PluginKmlOverlay" />
+    </feature>
+    <feature name="PluginGeocoder">
+        <param name="android-package" value="plugin.google.maps.PluginGeocoder" />
+    </feature>
+    <feature name="PluginLocationService">
+        <param name="android-package" value="plugin.google.maps.PluginLocationService" />
+    </feature>
+    <feature name="PluginEnvironment">
+        <param name="android-package" value="plugin.google.maps.PluginEnvironment" />
+    </feature>
+    <feature name="PluginMarkerCluster">
+        <param name="android-package" value="plugin.google.maps.PluginMarkerCluster" />
+    </feature>
+    <feature name="PluginStreetViewPanorama">
+        <param name="android-package" value="plugin.google.maps.PluginStreetViewPanorama" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="DateTimePicker">
+        <param name="android-package" value="com.skwas.cordova.datetimepicker.DateTimePicker" />
+    </feature>
+    <feature name="FirebaseMessaging">
+        <param name="android-package" value="by.chemerisuk.cordova.firebase.FirebaseMessagingPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="FirebaseAuthentication">
+        <param name="android-package" value="by.chemerisuk.cordova.firebase.FirebaseAuthenticationPlugin" />
+        <param name="onload" value="false" />
+    </feature>
+    <feature name="WebShare">
+        <param name="android-package" value="by.chemerisuk.cordova.WebSharePlugin" />
+        <param name="onload" value="false" />
+    </feature>
+    <feature name="RequestLocationAccuracy">
+        <param name="android-package" value="cordova.plugin.RequestLocationAccuracy" />
+    </feature>
+    <access origin="https://ssl.gstatic.com/accessibility/javascript/android/*" />
+    <feature name="MobileAccessibility">
+        <param name="android-package" value="com.phonegap.plugin.mobileaccessibility.MobileAccessibility" />
+    </feature>
+    <feature name="Diagnostic">
+        <param name="android-package" value="cordova.plugins.Diagnostic" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Diagnostic_Location">
+        <param name="android-package" value="cordova.plugins.Diagnostic_Location" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Kiwi</name>
+    <description>
+        Movete mas y paga menos usando Kiwi, una aplicacion de transporte.
+    </description>
+    <author email="kiwi-movetemejor@kiwiplus.site" href="https://kiwigchu.site">
+        KiwiPlus
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <resource-file src="res/styles.xml" target="app/src/main/res/values/styles.xml" />
+    <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
+    <icon density="mdpi" src="res/icon/android/icon-48-mdpi.png" />
+    <icon density="hdpi" src="res/icon/android/icon-72-hdpi.png" />
+    <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+    <resource-file src="res/icon/android-notification/icon-mdpi.png" target="app/src/main/res/drawable-mdpi/notification_icon.png" />
+    <resource-file src="res/icon/android-notification/icon-hdpi.png" target="app/src/main/res/drawable-hdpi/notification_icon.png" />
+    <resource-file src="res/icon/android-notification/icon-xhdpi.png" target="app/src/main/res/drawable-xhdpi/notification_icon.png" />
+    <resource-file src="res/icon/android-notification/icon-xxhdpi.png" target="app/src/main/res/drawable-xxhdpi/notification_icon.png" />
+    <resource-file src="res/icon/android-notification/icon-xxxhdpi.png" target="app/src/main/res/drawable-xxxhdpi/notification_icon.png" />
+    <config-file parent="/manifest/application" target="app/src/main/AndroidManifest.xml">
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notification_icon" />
+    </config-file>
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="xwalkZOrderOnTop" value="true" />
+    <preference name="BackgroundColor" value="0" />
+    <preference name="android-minSdkVersion" value="22" />
+    <preference name="GradlePluginGoogleServicesVersion" value="4.3.13" />
+    <preference name="LoadUrlTimeoutValue" value="700000" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyBzUjX7hsLAZYJk4GolTcBoeW_9fabn4HQ" />
+    <preference name="GOOGLE_MAPS_IOS_API_KEY" value="AIzaSyBzUjX7hsLAZYJk4GolTcBoeW_9fabn4HQ" />
+    <preference name="GOOGLE_MAPS_PLAY_SERVICES_VERSION" value="18.+" />
+    <preference name="cordova.plugins.diagnostic.modules" value="LOCATION" />
+    <preference name="android-targetSdkVersion" value="31" />
+    <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/icon/android/splash-icon.png" />
+    <preference name="AndroidWindowSplashScreenBackground" value="#ffffff" />
+    <preference name="AndroidPostSplashScreenTheme" value="@style/DropTheme" />
+    <preference name="SplashScreenDelay" value="-1" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="FadeSplashScreen" value="false" />
+    <preference name="AndroidInsecureFileModeEnabled" value="true" />
+</widget>

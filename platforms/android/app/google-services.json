@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "771649897370",
+    "firebase_url": "https://kiwiplus-82619-default-rtdb.firebaseio.com",
+    "project_id": "kiwiplus-82619",
+    "storage_bucket": "kiwiplus-82619.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771649897370:android:c7a12ccaf0a9d5d49e3023",
+        "android_client_info": {
+          "package_name": "com.kiwi.plus.conductores"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771649897370-8vok3q2m3e9flu7u4bensp1rrmu723t7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kiwi.plus.conductores",
+            "certificate_hash": "65fc64621abe32a140f2b4f6d6bce5f9045755f2"
+          }
+        },
+        {
+          "client_id": "771649897370-59k08lt3s3nrlciu2dsdg4oc9burce6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUx7g5Z79Rp2WNZlevmDo2voZ8PY0FSJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771649897370-59k08lt3s3nrlciu2dsdg4oc9burce6j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "771649897370-1383fuqb6u0drd44prqrca0it7jgh9fp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kiwi.plus.web"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771649897370:android:b0a7ca52bdd1fc3f9e3023",
+        "android_client_info": {
+          "package_name": "com.kiwi.plus.pasajeros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771649897370-99n6tit339viq098k1decedcl467p5to.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kiwi.plus.pasajeros",
+            "certificate_hash": "4a9ea6219943dcf777076d240604ee5be154c901"
+          }
+        },
+        {
+          "client_id": "771649897370-59k08lt3s3nrlciu2dsdg4oc9burce6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUx7g5Z79Rp2WNZlevmDo2voZ8PY0FSJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771649897370-59k08lt3s3nrlciu2dsdg4oc9burce6j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "771649897370-1383fuqb6u0drd44prqrca0it7jgh9fp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kiwi.plus.web"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

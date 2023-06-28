@@ -1,0 +1,88 @@
+<ons-page id="addresses">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>Back</ons-back-button></div>
+      <div class="center" id="address-page-title">Select Location...</div>
+    </ons-toolbar>       
+    
+    <div class="screen-wrap-white" style="display: flex;flex-direction: column;">
+      <div style="flex-shrink: 0">
+          
+          <div id="location-type-icon-p" style="position:relative;visibility: visible;background-color: white;margin-left: 15px;width: calc(100% - 70px);box-shadow: rgb(204, 204, 204) 1px 1px 20px 1px;background-image: url('img/pick-up.png');background-size: 32px;background-repeat: no-repeat;background-position-y: center;padding-right: 10px;margin-top: 10px;border-radius: 20px;">
+            <ons-icon id="p-address-inp-clear-btn" icon='fa-times-circle' size='22px' style='background-color: white;position: absolute;top: 50%;left: 100%;transform: translate(-100%, -50%);color:grey;border: 8px solid white;border-radius:50%;'></ons-icon>
+            <div>
+                <input id="address-input-p" onkeyup="address_input();" type="text" placeholder="Pick up location" style="display:inline-block;font-size: 14px;width: calc(100% - 65px);border: 0;margin-left: 35px;margin-bottom: 12px;margin-top: 7px;" >
+            </div>                        
+          
+          </div>
+
+          <div id="location-type-icon-ds1" style="position:relative;visibility: visible;background-color: white;margin-left: 15px;width: calc(100% - 70px);box-shadow: rgb(204, 204, 204) 1px 1px 20px 1px;background-image: url('img/waypoint.png');background-size: 32px;background-repeat: no-repeat;background-position-y: center;padding-right: 10px;margin-top: 10px;border-radius: 20px;">
+            <ons-icon id="ds1-address-inp-clear-btn" icon='fa-times-circle' size='22px' style='background-color: white;position: absolute;top: 50%;left: 100%;transform: translate(-100%, -50%);color:grey;border: 8px solid white;border-radius:50%;'></ons-icon>
+            <ons-icon id="ds1-address-inp-remove-btn" icon='fa-minus' size='22px' style='position: absolute;top: 50%;left: calc(100% + 30px);transform: translate(-100%, -50%);color:#f44336;'></ons-icon>
+            <div>
+                <input data-address="" data-lat="" data-lng="" id="address-input-ds1" onkeyup="address_input();" type="text" placeholder="Add a stop" style="display:inline-block;font-size: 14px;width: calc(100% - 65px);border: 0;margin-left: 35px;margin-bottom: 12px;margin-top: 7px;" >
+            </div>                        
+          
+          </div>
+
+          <div id="location-type-icon-ds2" style="position:relative;visibility: visible;background-color: white;margin-left: 15px;width: calc(100% - 70px);box-shadow: rgb(204, 204, 204) 1px 1px 20px 1px;background-image: url('img/waypoint.png');background-size: 32px;background-repeat: no-repeat;background-position-y: center;padding-right: 10px;margin-top: 10px;border-radius: 20px;">
+            <ons-icon id="ds2-address-inp-clear-btn" icon='fa-times-circle' size='22px' style='background-color: white;position: absolute;top: 50%;left: 100%;transform: translate(-100%, -50%);color:grey;border: 8px solid white;border-radius:50%;'></ons-icon>
+            <ons-icon id="ds2-address-inp-remove-btn" icon='fa-minus' size='22px' style='position: absolute;top: 50%;left: calc(100% + 30px);transform: translate(-100%, -50%);color:#f44336;'></ons-icon>
+            <div>
+                <input data-address="" data-lat="" data-lng="" id="address-input-ds2" onkeyup="address_input();" type="text" placeholder="Add a stop" style="display:inline-block;font-size: 14px;width: calc(100% - 65px);border: 0;margin-left: 35px;margin-bottom: 12px;margin-top: 7px;" >
+            </div>                        
+          
+          </div>
+
+          
+          <div id="location-type-icon-d" style="position:relative;visibility: visible;background-color: white;margin-left: 15px;width: calc(100% - 70px);box-shadow: rgb(204, 204, 204) 1px 1px 20px 1px;background-image: url('img/drop-off.png');background-size: 32px;background-repeat: no-repeat;background-position-y: center;padding-right: 10px;margin-top: 10px;margin-bottom: 5px;border-radius: 20px;">
+            <ons-icon id="d-address-inp-clear-btn" icon='fa-times-circle' size='22px' style='background-color: white;position: absolute;top: 50%;left: 100%;transform: translate(-100%, -50%);color:grey;border: 8px solid white;border-radius:50%;'></ons-icon>
+            <ons-icon id="add-stop-btn" icon='fa-plus' size='22px' style='position: absolute;top: 50%;left: calc(100% + 30px);transform: translate(-100%, -50%);color:#ff9800;'></ons-icon>
+            <div>
+
+                <input id="address-input-d" onkeyup="address_input();" type="text" placeholder="Drop off location" style="display:inline-block;font-size: 14px;width: calc(100% - 65px);border: 0;margin-left: 35px;margin-bottom: 12px;margin-top: 7px;" >
+            </div>                        
+          
+          </div>
+          
+          <ons-progress-bar id="address-progressbar" style="visibility:hidden;" indeterminate></ons-progress-bar>
+      </div>
+
+
+      <div style='border-bottom: thin solid #ccc;border-top: thin solid #ccc;flex-shrink: 0;' onclick="locationmapshow();">
+          <ons-list>
+            
+            <ons-list-item>
+              <div class="left">
+                <ons-icon style='color:#999;' icon="fa-map" size="24px"></ons-icon>
+              </div>
+              <div class="center">
+                <p style="font-size: 16px;color:#2979ff;font-weight:bold;margin: 3px 0;text-overflow: ellipsis;overflow: hidden;" data-i18naddres="Select location from map" >Select location from map</p>
+              </div>
+            </ons-list-item>              
+          </ons-list>
+      </div>
+
+       
+      <div id="locations-info-results" style="overflow-y:scroll;height:100%">
+          <ons-list>
+            
+            <div id="location-result"></div>
+            <div id="recent-list"></div>
+            <div id="fav-list"></div>
+          </ons-list>
+      </div>
+
+      <div id="multidestconfirmbtn" style="width: 100%;flex-shrink: 0;text-align: center;padding-bottom: 15px;padding-top:10px;background-color: #fff;display:none;" >        
+        <!-- <p style="margin-left: auto;margin-right: auto;width: 90%;font-size: 16px;text-align: center;"><ons-icon style='color: #717171;font-size: 24px;vertical-align: middle;' icon="fa-info-circle" size="24px"></ons-icon> Please do not keep your driver waiting for too long during stop times</p> -->
+        <ons-button id="processmultidestbtn" onclick = "process_multidestinations()" style="width:90%;margin-left: auto;margin-right: auto;" modifier="large" >Continue</ons-button>
+      </div>
+
+
+
+    </div>
+    
+
+
+   
+
+</ons-page>

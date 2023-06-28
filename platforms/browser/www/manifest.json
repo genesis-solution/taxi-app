@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Kiwi",
+  "short_name": "Kiwi",
+  "version": "com.kiwi.plus.pasajeros",
+  "description": "Movete mas y paga menos usando Kiwi, una aplicacion de transporte.",
+  "author": "KiwiPlus",
+  "icons": [],
+  "orientation": "portrait",
+  "start_url": "index.html"
+}

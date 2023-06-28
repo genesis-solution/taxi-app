@@ -1,0 +1,41 @@
+<ons-page id="bookingpage">
+        <ons-toolbar>
+          <div class="left"><ons-back-button>Back</ons-back-button></div>
+          <div class="center" data-i18nbookpage="Trips">Trips</div>
+          <div class="right"><ons-button modifier="outline" onclick='getbookings()' style="margin-right:10px;"><ons-icon icon='ion-refresh' size='22px' style='color: white;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size: 22px;margin-top: 3px;'></ons-icon></ons-button></div>
+        </ons-toolbar>
+        <div class="screen-wrap-white">
+            <ons-tabbar id="myTabbar" swipeable position="auto">
+                <ons-tab page="current.html" data-i18ntbookpage="Current" label="Current" active></ons-tab>
+                <ons-tab page="completed.html" data-i18ntbookpage="Completed" label="Completed"></ons-tab>
+                <ons-tab page="cancelled.html" data-i18ntbookpage="Cancelled" label="Cancelled"></ons-tab>
+            </ons-tabbar>
+        </div>
+
+    <template id="current.html">
+     <ons-page id="bookingpagecurrent">
+        <ons-list>
+            <div id="booking-pend-onride"></div> 
+        </ons-list>
+     </ons-page>
+    </template>
+
+    <template id="completed.html">
+        <ons-page id="bookingpagecomplete">
+            <ons-list>
+                <div id="booking-comp"></div>
+         </ons-list>
+        </ons-page>
+       </template>
+
+       
+
+    <template id="cancelled.html">
+        <ons-page id="bookingpagecancel">
+            <ons-list>
+                <div id="booking-canc"></div>
+            </ons-list>
+        </ons-page>
+       </template>
+</ons-page>
+    

@@ -1,0 +1,75 @@
+{
+  "_from": "cordova.plugins.diagnostic@7.1.0",
+  "_id": "cordova.plugins.diagnostic@7.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-X9NHRkmnoON5vJPCwR7lYXu61nsHUvhgcHsK8bIJiyMV67ziZDsoxQ8BSlmtfLJ3QSRWxHgzJDm0pqlN+grOfw==",
+  "_location": "/cordova.plugins.diagnostic",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova.plugins.diagnostic@7.1.0",
+    "name": "cordova.plugins.diagnostic",
+    "escapedName": "cordova.plugins.diagnostic",
+    "rawSpec": "7.1.0",
+    "saveSpec": null,
+    "fetchSpec": "7.1.0"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova.plugins.diagnostic/-/cordova.plugins.diagnostic-7.1.0.tgz",
+  "_shasum": "88b08a7d024bd4f2e00194cf9dad184a0fb04bc4",
+  "_spec": "cordova.plugins.diagnostic@7.1.0",
+  "_where": "C:\\wamp64\\www\\drop\\drop\\rider",
+  "author": {
+    "name": "Dave Alden"
+  },
+  "bugs": {
+    "url": "https://github.com/dpa99c/cordova-diagnostic-plugin/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova.plugins.diagnostic",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "cordova_name": "Diagnostic",
+  "dependencies": {
+    "colors": "1.4.0",
+    "elementtree": "^0.1.6",
+    "minimist": "1.2.6"
+  },
+  "deprecated": false,
+  "description": "Cordova/Phonegap plugin to check the state of Location/WiFi/Camera/Bluetooth device settings.",
+  "homepage": "https://github.com/dpa99c/cordova-diagnostic-plugin#readme",
+  "issue": "https://github.com/dpa99c/cordova-diagnostic-plugin/issues",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "android",
+    "ios",
+    "phonegap",
+    "diagnostic",
+    "wifi",
+    "location",
+    "gps",
+    "camera",
+    "bluetooth",
+    "settings"
+  ],
+  "license": "MIT",
+  "name": "cordova.plugins.diagnostic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpa99c/cordova-diagnostic-plugin.git"
+  },
+  "scripts": {
+    "postinstall": "node ./scripts/apply-modules.js"
+  },
+  "types": "./cordova.plugins.diagnostic.d.ts",
+  "version": "7.1.0"
+}

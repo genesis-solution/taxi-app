@@ -1,0 +1,97 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-firebase-messaging"
+      version="7.0.3">
+
+    <name>FirebaseMessagingPlugin</name>
+    <description>Cordova plugin for Firebase Cloud Messaging</description>
+    <license>MIT</license>
+    <keywords>cordova</keywords>
+    <repo>https://github.com/chemerisuk/cordova-plugin-firebase-messaging</repo>
+    <issue>https://github.com/chemerisuk/cordova-plugin-firebase-messaging/issues</issue>
+
+    <js-module src="www/FirebaseMessaging.js" name="FirebaseMessaging">
+        <merges target="cordova.plugins.firebase.messaging" />
+    </js-module>
+
+    <engines>
+        <engine name="cordova" version=">=10.0.0"/>
+        <engine name="cordova-android" version=">=11.0.0"/>
+        <engine name="cordova-ios" version=">=6.0.0"/>
+    </engines>
+
+    <platform name="ios">
+        <preference name="IOS_FIREBASE_POD_VERSION" default="9.3.0" />
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="FirebaseMessaging">
+                <param name="ios-package" value="FirebaseMessagingPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+            <array>
+                <string>remote-notification</string>
+            </array>
+        </config-file>
+        <config-file target="*-Debug.plist" parent="aps-environment">
+            <string>development</string>
+        </config-file>
+        <config-file target="*-Release.plist" parent="aps-environment">
+            <string>production</string>
+        </config-file>
+
+        <header-file src="src/ios/AppDelegate+FirebaseMessagingPlugin.h" />
+        <source-file src="src/ios/AppDelegate+FirebaseMessagingPlugin.m" />
+        <header-file src="src/ios/FirebaseMessagingPlugin.h" />
+        <source-file src="src/ios/FirebaseMessagingPlugin.m" />
+
+        <podspec>
+            <config>
+                <source url="https://cdn.cocoapods.org/"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="Firebase/Messaging" spec="$IOS_FIREBASE_POD_VERSION" />
+            </pods>
+        </podspec>
+    </platform>
+
+    <platform name="android">
+        <preference name="ANDROID_FIREBASE_BOM_VERSION" default="30.3.1" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FirebaseMessaging">
+                <param name="android-package" value="by.chemerisuk.cordova.firebase.FirebaseMessagingPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <config-file target="config.xml" parent="/*">
+            <preference name="AndroidXEnabled" value="true" />
+            <preference name="GradlePluginGoogleServicesEnabled" value="true" />
+            <preference name="GradlePluginGoogleServicesVersion" value="4.3.13" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <service android:name="by.chemerisuk.cordova.firebase.FirebaseMessagingPluginService" android:exported="false">
+                <intent-filter>
+                    <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                </intent-filter>
+            </service>
+            <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="default"/>
+        </config-file>
+
+        <dependency id="cordova-support-android-plugin" version="~2.0.4" />
+
+        <framework src="platform('com.google.firebase:firebase-bom:$ANDROID_FIREBASE_BOM_VERSION')" />
+        <framework src="com.google.firebase:firebase-messaging" />
+        <framework src="me.leolin:ShortcutBadger:1.1.22@aar"/>
+
+        <source-file src="src/android/FirebaseMessagingPlugin.java"
+            target-dir="src/by/chemerisuk/cordova/firebase/" />
+        <source-file src="src/android/FirebaseMessagingPluginService.java"
+            target-dir="src/by/chemerisuk/cordova/firebase" />
+    </platform>
+
+</plugin>

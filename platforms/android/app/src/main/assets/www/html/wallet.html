@@ -1,0 +1,68 @@
+<ons-page id="walletpage">
+        <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center" data-i18nwalletpg="Wallet">Wallet</div>
+        <div class="right"><ons-button modifier="outline" onclick="getwalletinfo()" style="margin-right:10px;"><ons-icon icon='ion-refresh' size='22px' style='color: white;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size: 22px;margin-top: 3px;'></ons-icon></ons-button></div>
+        
+        </ons-toolbar>
+        <ons-tabbar id="walletTabbar" swipeable position="auto">
+            <ons-tab page="balance.html" data-i18ntwalletpg="Balance" label="Balance" active></ons-tab>
+            <ons-tab page="wallethistory.html" data-i18ntwalletpg="Funding" label="Funding"></ons-tab>
+            <ons-tab page="walletdebit.html" data-i18ntwalletpg="Transactions" label="Transactions"></ons-tab>
+        </ons-tabbar>
+    
+        <template id="balance.html">
+            <ons-page id="walletbalance">
+                <div class="screen-wrap-white">    
+                    <div class='setfgcolor' style="padding: 25px 0px;color: white;">
+                        <p style='text-align:center;font-size: 12px;font-weight: bold;' data-i18nwalletbl="Current Balance">Current Balance</p>
+                        <h1 style="font-size:40px;text-align:center;margin-top:0;" id="walletbal">0.00</h1>                        
+                    </div>
+
+                    <div style="padding-bottom: 30px;width: 95%;margin-left: auto;margin-right: auto;border: thin solid #ccc;margin-top: 10px;box-shadow: 1px 1px 9px 2px #eee;">
+                        <p style='color: #717171;font-size: 14px;margin: 0 0;font-weight: bold;padding: 18px 0px;width: 80%;margin-left: auto;margin-right: auto;' data-i18nwalletbl="Reward Points">Reward Points</p>
+                        
+                        <div style="margin-top: 20px;text-align: center;">          
+                            <h1 style="font-size:40px;text-align:center;margin-top:0;margin-bottom: 20px;color: #717171;"><span id="rewardpointsvalue" >0</span><span style="font-size:14px;font-weight:bold"> pts</span></h1>
+                            <ons-button style="width:80%;margin-left: auto;margin-right: auto;display: inline-block;" modifier="large" onclick="redeempoints()" id="redeempointsbtn" data-i18nwalletbl="Redeem Points">Redeem Points</ons-button>
+                        </div>
+                    </div>
+                                        
+                    <div style="padding-bottom: 30px;width: 95%;margin-left: auto;margin-right: auto;border: thin solid #ccc;margin-top: 10px;box-shadow: 1px 1px 9px 2px #eee;">
+                        <p style='color: #717171;font-size: 14px;margin: 0 0;font-weight: bold;padding: 18px 0px;width: 80%;margin-left: auto;margin-right: auto;' data-i18nwalletbl="Fund Wallet">Fund Wallet</p>
+                        
+                        <div style="margin-top: 40px;text-align: center;">          
+                            <ons-input style="width:80%;margin-bottom: 30px;" id="fundAmount" modifier="underbar" type="number" data-i18nnwalletbl="Amount" placeholder="Amount" float></ons-input>            
+                            <div id="wallet-preset-buttons" style="margin-bottom: 10px;display: flex;justify-content: center;flex-wrap: nowrap;">
+                                <ons-button style="border: thin solid #ccc;" onclick="$('#fundAmount').val('200');Vpay();" modifier="outline">200</ons-button>
+                                <ons-button style="border: thin solid #ccc;" onclick="$('#fundAmount').val('500');Vpay();" modifier="outline">500</ons-button>
+                                <ons-button style="border: thin solid #ccc;" onclick="$('#fundAmount').val('1000');Vpay();" modifier="outline">1000</ons-button>
+                                <ons-button style="border: thin solid #ccc;" onclick="$('#fundAmount').val('2000');Vpay();" modifier="outline">2000</ons-button>
+                            </div>
+                            <div id="kiosk-mode-option" style="text-align: left;margin-bottom: 20px;display:none;margin-top: 30px;width: 80%;margin-left: auto;margin-right: auto;"><ons-checkbox id="kiosk-mode"></ons-checkbox> <span style="color: #717171;font-size: 14px;" data-i18nwalletbl="Pay using kiosk">Pay using kiosk</span></div>
+                            <ons-button style="width:80%;margin-left: auto;margin-right: auto;display: inline-block;" modifier="large" onclick="Vpay()" data-i18nwalletbl="Pay">Pay</ons-button>
+                        </div>
+                    </div>
+                </div>
+        </ons-page>
+        </template>
+
+        <template id="wallethistory.html">
+            <ons-page id="wallethistory">
+                <div class="screen-wrap-white"> 
+                    <div id="wallethistoryitems"></div>
+                </div>
+            </ons-page>
+        </template>
+
+
+        <template id="walletdebit.html">
+            <ons-page id="walletdhistory">
+                <div class="screen-wrap-white">
+                    <div id="walletdhistoryitems"></div>
+                </div>
+            </ons-page>
+        </template>
+
+</ons-page>
+  

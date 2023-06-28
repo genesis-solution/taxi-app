@@ -1,0 +1,149 @@
+<ons-page id="profilepage">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>Back</ons-back-button></div>
+      <div class="center" data-i18nprofilepg="My Profile">My Profile</div>
+    </ons-toolbar>
+
+    <div class="screen-wrap-white" style="overflow-x:hidden;">
+        
+            <table style="height:100%;width:90%;table-layout: fixed;margin-left:auto;margin-right:auto;min-height: 800px;">
+                    <tbody>
+                        <tr>
+                            <td colspan="10">
+                                <div id="image-editor" style="border:0px;position:relative;text-align:center;" >
+                                    <input type="file" accept="image/*" style='visibility:hidden;position:absolute;' class="cropit-image-input" capture="camera" />
+                                    <div syle="display:inline-block;position:relative;">
+                                        <div style='background-image: url(img/dummy-user.png);background-size: cover;overflow:hidden;border-radius: 50%;margin-left: auto;margin-right: auto;margin-top: 7px;width: 150px;height: 150px;cursor: move;' class="cropit-preview"></div>
+                                        <button class="setfgcolor" style="box-shadow: 1px 1px 5px 0px #afafaf;outline:none;position: absolute;width:50px;height:50px;border-radius: 50%;border: thin solid transparent;left: 60%;bottom:0;"><i style="font-size: 20px;color: white;" class='select-image-btn fa fa-camera'></i></button>
+                                    </div>
+                                    
+                                </div>
+                                <div style="text-align: center;font-weight:bold;letter-spacing: 1px;text-transform: uppercase;margin-top: 10px;"><span id="firstname"></span> <span id="lastname"></span></div>
+                                <div style="text-align:center;"><img id="user-rating" height='20' src="img/rating-4.png"></div>
+                                <div style="text-align: center;text-transform: uppercase;"><span id="address" style="font-size:14px;">26C Orlu Rd. Amakohia.</span></div> 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="1">
+                                <ons-icon icon='fa-language' size='14px' style='color:grey;'></ons-icon>
+                            </td>
+                            <td colspan="9" style="border-bottom: solid thin lightgray;padding-top: 6px;padding-bottom: 6px;">
+                                <span style="display:block;font-family: Roboto,Noto,sans-serif;font-size:13px;font-weight:400;margin-top:5px;" data-i18nprofilepg="Language">Language</span>
+                                <p style="margin: 3px 0;">
+                                    <ons-select class="select">
+                                        <select id="lang-select" class="select-input" style='font-size: 16px;font-weight: bold;color:#2979ff;margin-top: -5px;background: none;'>
+                                            
+                                        </select>
+                                    </ons-select>
+                                </p>
+                            </td>
+                        </tr>
+        
+                               
+                        <tr>
+                            <td colspan="1">
+                                <ons-icon icon='fa-phone' size='14px' style='color:grey;'></ons-icon>
+                            </td>
+                            <td colspan="9" style="padding-top: 10px;">                            
+                                <!-- <ons-input style="width: 100%;margin-top:10px;" id="phone" modifier="underbar" placeholder="Phone" float></ons-input> -->
+                                <div class="intl-tel-code" style="min-width:60px;display: inline-block;" onclick="showProfileCountryTel();"><div id="country-flag-profile" class="iti__flag iti__ng" data-country="ng" style="width:20px;display:inline-block;background-color: white;"></div><span id="tel-code-profile" style="font-size:16px;" data-dialcode="234" > +234</span></div>                                    
+                                <div style="width:calc(100% - 90px);display:inline-block;"><ons-input  style="width:100%" id="phone" type="number" modifier="underbar" data-i18nnprofilepg="Phone" placeholder="Phone"></ons-input></div>  
+                            </td>
+                            
+                        </tr>
+        
+        
+                        
+        
+                        <tr>
+                            <td colspan="1">
+                                <ons-icon icon='fa-envelope' size='14px' style='color:grey;'></ons-icon>
+                            </td>
+                            <td colspan="9">                            
+                                <ons-input style="width: 100%;margin-top:10px;" id="email" modifier="underbar" data-i18nnprofilepg="E-mail" placeholder="E-mail" float></ons-input>
+                            </td>
+                            
+                        </tr>
+        
+        
+                        <tr>
+                            <td colspan="1">
+                                <ons-icon icon='fa-lock' size='14px' style='color:grey;'></ons-icon>
+                            </td>
+                            <td colspan="9">                            
+                                <ons-input style="width: 100%;margin-top:10px;" id="oldpassword" modifier="underbar" data-i18nnprofilepg="Current Password" placeholder="Current Password" float></ons-input>
+                            </td>
+                            
+                        </tr>
+        
+        
+                        <tr>
+                            <td colspan="1">
+                                <ons-icon icon='fa-lock' size='14px' style='color:grey;'></ons-icon>
+                            </td>
+                            <td colspan="9">                            
+                                <ons-input style="width: 100%;margin-top:10px;" id="newpassword" modifier="underbar" data-i18nnprofilepg="New Password" placeholder="New Password" float></ons-input>
+                            </td>
+                            
+                        </tr>
+        
+                        <tr>
+                            <td colspan="1">
+                                <ons-icon icon='fa-lock' size='14px' style='color:grey;'></ons-icon>
+                            </td>
+                            <td colspan="9">                            
+                                <ons-input style="width: 100%;margin-top:10px;" id="confirmpassword" modifier="underbar" data-i18nnprofilepg="Confirm password" placeholder="Confirm Password" float></ons-input>
+                            </td>
+                        </tr>
+        
+        
+                        <tr>
+                            <td colspan="10" style="text-align:center;">
+                                <ons-button style="width:90%" onclick="profileupdate()" data-i18nprofilepg="Update">Update</ons-button>
+                            </td>
+                        </tr>
+
+                                
+        
+                        <tr>
+                            <td colspan="10">
+                                <div style="width: 90%;text-align:left;margin-left: auto;margin-right: auto;" id="refcode_info"></div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="1">
+                                <ons-icon icon='fa-sign-out' size='14px' style='color:grey;'></ons-icon>
+                            </td>
+                            <td colspan="9" style="border-top: solid thin lightgray;padding-top: 15px;padding-bottom: 20px;">                            
+                                <p onclick="logout()" style="font-size: 16px;color:#2979ff;font-weight:bold;margin: 3px 0;text-overflow: ellipsis;overflow: hidden;" data-i18nprofilepg="Logout">Logout</p>
+                            </td>
+        
+                        </tr>
+
+
+                        <tr>
+                            <td colspan="1">
+                                <ons-icon icon='fa-user-times' size='14px' style='color:grey;'></ons-icon>
+                            </td>
+                            <td colspan="9" style="border-top: solid thin lightgray;padding-top: 15px;padding-bottom: 20px;">                            
+                                <p onclick="del_acc()" style="font-size: 16px;color:#2979ff;font-weight:bold;margin: 3px 0;text-overflow: ellipsis;overflow: hidden;" data-i18nprofilepg="Delete my account">Delete my account</p>
+                            </td>
+        
+                        </tr>
+
+                        
+        
+        
+                    </tbody>
+                </table>
+        
+    </div>
+
+        
+  </div>      
+
+
+</ons-page>
+  

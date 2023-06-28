@@ -1,0 +1,32 @@
+<ons-page id="promotions">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>Back</ons-back-button></div>
+      <div class="center" data-i18npromotions="Discounts">Promo Discount</div>
+    </ons-toolbar>
+    <div class="screen-wrap-white">
+      <div class="center-screen" style="width:90%;height:100%;overflow-x:hidden;padding: 10px;">
+        
+        <p style='color: #717171;font-size: 14px;margin: 0 0;font-weight: bold;    padding: 30px 0px 10px 0px;margin-left: auto;margin-right: auto;' data-i18npromotions="Enter a promo code">Enter a promo code</p>
+        <p style='color: #717171;margin: 0 0;margin-left: auto;margin-right: auto;' data-i18npromotions="Promo discount will be applied on your next ride">Promo discount will be applied on your next ride</p>
+        <div style="margin-top: 40px;text-align: center;">          
+            <ons-input id="promocodeval" style="width:80%;margin-bottom: 30px;" id="promocode" modifier="underbar" type="text" float></ons-input>            
+            <ons-button style="margin-left: auto;margin-right: auto;display: inline-block;" modifier="large" onclick="promocheckadd($('#promocodeval').val())" data-i18npromotions="Apply">Apply</ons-button>
+        </div>
+        
+        <div id="promo-content" style="display:none;">
+          <p style='color: #717171;font-size: 14px;margin: 50px 0 20px 0;font-weight: bold; padding: 10px 0px 10px 0px;margin-left: auto;margin-right: auto;' data-i18npromotions="Your Discount">Your Discount</p>
+          <div style="padding:10px;margin-top: 10px;margin-bottom:10px;background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 27%, rgba(0,212,255,1) 100%);border-radius: 10px;box-shadow: 1px 1px 2px 0px grey;">
+              <p id="promo-title" style="color: #fff;font-weight: bold;font-size: 16px;margin: 0 0 15px 0;"></p>
+              <p id="promo-desc" style="color: #fff;font-size: 14px;margin:0 0 15px 0;"></p>
+              <p style="margin:0 0 10px 0;font-size:12px;color: #bdbdbd;" id="promo-usage"></p>
+              <p style="margin:0 0 10px 0;font-size:12px;color: #bdbdbd;" id="promo-status"></p>
+              <hr>
+              <p style="margin:0;font-size:12px;color: #bdbdbd;" id="promo-city"></p>
+
+          </div> 
+        </div>
+      </div>              
+    </div>
+  
+  </ons-page>
+  

@@ -1,0 +1,77 @@
+{
+  "_from": "cordova-plugin-firebase-messaging@7.0.3",
+  "_id": "cordova-plugin-firebase-messaging@7.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-tnRZMloH7b+VfEuhWxLzpEZ7apzj6sEIG55qYPQN0MxSpWmpu3uQKFIDwhtxtDD8U5QMs+Lul3KWFlbU9Y2VFQ==",
+  "_location": "/cordova-plugin-firebase-messaging",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-plugin-firebase-messaging@7.0.3",
+    "name": "cordova-plugin-firebase-messaging",
+    "escapedName": "cordova-plugin-firebase-messaging",
+    "rawSpec": "7.0.3",
+    "saveSpec": null,
+    "fetchSpec": "7.0.3"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-firebase-messaging/-/cordova-plugin-firebase-messaging-7.0.3.tgz",
+  "_shasum": "db42e169293f074e2b1cb61cea857b97eb062b80",
+  "_spec": "cordova-plugin-firebase-messaging@7.0.3",
+  "_where": "C:\\wamp64\\www\\drop\\drop\\rider",
+  "author": {
+    "name": "Maksim Chemerisuk",
+    "email": "chemerisuk@gmail.com",
+    "url": "https://github.com/chemerisuk"
+  },
+  "bugs": {
+    "url": "https://github.com/chemerisuk/cordova-plugin-firebase-messaging/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-firebase-messaging",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin for Firebase Messaging",
+  "devDependencies": {
+    "typedoc": "^0.23.9",
+    "typedoc-plugin-markdown": "^3.13.4"
+  },
+  "funding": "https://github.com/chemerisuk/cordova-plugin-firebase-messaging?sponsor=1",
+  "homepage": "https://github.com/chemerisuk/cordova-plugin-firebase-messaging#readme",
+  "keywords": [
+    "cordova",
+    "firebase",
+    "push",
+    "fcm",
+    "gcm",
+    "messaging",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-firebase-messaging",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemerisuk/cordova-plugin-firebase-messaging.git"
+  },
+  "scripts": {
+    "docs": "typedoc && perl -i -pe 's/README.md#/#/g' ./docs/README.md",
+    "postdocs": "perl -i -0pe 's/(<!-- TypedocGenerated -->).*/$1\n\n/gms' README.md && cat ./docs/README.md >> README.md",
+    "postversion": "git push && git push --tags",
+    "predocs": "tsc www/* --declaration --allowJs --checkJs --lib es2015,dom --emitDeclarationOnly --outDir types",
+    "preversion": "npm run docs && rm -rf docs",
+    "version": "perl -i -pe 's/(version=)\"\\d+\\.\\d+\\.\\d+\"/$1\"'$npm_package_version'\"$2/' plugin.xml && git add ."
+  },
+  "types": "./types/index.d.ts",
+  "version": "7.0.3"
+}
